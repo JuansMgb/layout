@@ -11,9 +11,9 @@
     padding-top: 38px;
     padding-bottom: 76px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
 }
 
 
@@ -22,6 +22,44 @@
     border-radius: 1rem;
     overflow: hidden;
 }
+
+.dcto{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    position: absolute;
+    right: 0;
+    top: 16px;
+
+    
+}
+
+.dcto--mol {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    right: 60px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    
+}
+
+
+.dcto--info{
+    background-color: brown;
+    height: 20px;
+    position: absolute;
+    right: 8px;
+    color: #fff;
+}
+
 
 
 .card img{
@@ -61,6 +99,10 @@
     
 }
 
+.card--info p{
+    font-size: 14px;
+}
+
 .card--title{
     width: 80%;
     padding: 5px;
@@ -68,7 +110,7 @@
     border-radius: 10px;
     text-align: center;
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     color: #fff;
 }
 
@@ -88,7 +130,9 @@
 }
 
 .btn{
+    padding: 16px;
     background-color: brown;
-    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
+    color: #fff;
 }
