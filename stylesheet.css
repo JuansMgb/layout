@@ -1,0 +1,94 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.projects{
+    width: 90%;
+    padding-top: 38px;
+    padding-bottom: 76px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+
+.card{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    background: #e30e0e69;
+    align-items: flex-end;
+    padding:  1.0rem 1.20rem;
+    transition: .3s;
+}
+
+
+
+.card:hover .modal{
+    bottom: 0;
+}
+
+.texts--info{
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card--info{
+    display: grid;
+    place-items: center;
+    position: relative;
+    
+}
+
+.card--title{
+    width: 80%;
+    padding: 5px;
+    background-color: brown;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    color: #fff;
+}
+
+.info{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 12px;
+
+}
+
+.texts--pron{
+    
+    margin: 0;
+    padding: 10px;
+    border-right: solid 2px #e30e0e69;
+}
+
+.btn{
+    background-color: brown;
+    padding: 10px;
+    cursor: pointer;
+}
