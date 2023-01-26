@@ -5,9 +5,6 @@
 }
 
 
-
-
-
 .projects{
     padding-top: 38px;
     padding-bottom: 76px;
@@ -153,4 +150,14 @@
     border-radius: 10px;
     cursor: pointer;
     color: #fff;
+}
+
+
+@media (min-width: 500px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 900px;
+    }
+
 }
